@@ -72,9 +72,9 @@ public class firstGuiPgm {
 
     //create custom event handler
     private static class ButtonHandler implements ActionListener {
-        public void actionPerformed(ActionEvent evt){
+        public void actionPerformed(ActionEvent e){
             //which button?
-            String command = evt.getActionCommand();
+            String command = e.getActionCommand();
             //give message
             if(command.equals("Sad")){
                 label.setText("You picked the Sad button");
