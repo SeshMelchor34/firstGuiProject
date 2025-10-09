@@ -17,6 +17,8 @@ import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.JFrame;
 
+import static JMenuPackage.firstGuiPgm.guiApp;
+
 //Used Action Listener for JMenuItem & JRadioButtonMenuItem
 //Used Item Listener for JCheckBoxMenuItem
 
@@ -175,6 +177,7 @@ public class jMenuDemo implements ActionListener, ItemListener{
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 createGUI();
+                guiApp();
             }
         });
     }
